@@ -37,3 +37,15 @@ Request airdrop (solana/web3.js)
 + singers[{publicKey:key, secretKey}]
 + Transaction: new Transaction().add(instructions);
 + sendAndConfirmTransaction(connection, transaction, signers) [https://solana-labs.github.io/solana-web3.js/modules.html#sendAndConfirmTransaction]
+
+## Smart contract
++ Rust code => *compile* => program => *deploy* => smart contract
++ Pre-condition
+  - Solana CLI (solana config set --url ...)
+  - deploy account
+    + solana-keygen new --outfile path file/key.json
+    + solana config set --keypair <path>
+  => Tricks (cargo-build-bpf)
+    + Windows: set path for Home = C:\Users\<user>
+    + Run as admin
+  
