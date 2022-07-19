@@ -14,3 +14,26 @@
 https://learn.figment.io/tutorials/solana-101
 
 https://github.com/figment-networks/learn-web3-dapp#-get-started
+
+
+# Step to do sol
+## Setup project
+  + solana cli
+  + DataHub key
+  + keypair (for 
+## Connect to solana (dev, test...)
+
+## Create account
+Solana transactions = accounts' operations
+
+## Fund the acc with SOL
+Request airdrop (solana/web3.js)
+
+## Check balance
++ getBalance(publicKey);
+
+## Transfer
++ Instruction: SystemProgram.transfer(from, to, amount)
++ singers[{publicKey:key, secretKey}]
++ Transaction: new Transaction().add(instructions);
++ sendAndConfirmTransaction(connection, transaction, signers) [https://solana-labs.github.io/solana-web3.js/modules.html#sendAndConfirmTransaction]
