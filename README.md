@@ -64,3 +64,18 @@ Request airdrop (solana/web3.js)
     + greetedPubkey(payer.publicKey, seed, programId)
     + lamports: connection.getMinimumBalanceForRentExemption(size)
     + transaction: SystemProgram.createAccountWithSeed() => sendAndConfirmTransaction(connection, transaction, [payer])
+  
+## Get info
+  + inputs
+    - network
+    - greeterPublicKey (id of the storage account)
+  + method: connection.getAccountInfo(greeterPublicKey);
+    - deserialize: borsh.deserialize(schema, class, data)
+  
+## Set info
+  + inputs
+    - network: new Connection(url, 'confirmed');
+    - acount public key: new PublicKey(greeter);
+    - programId: new PublicKey(programId);
+    - payer: secret => payerSecretKey => payerKeypair
+  + method: instruction => sendAndConfirmTransaction(connection, transaction, [keypair])
