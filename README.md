@@ -44,7 +44,7 @@ Request airdrop (solana/web3.js)
   - Solana CLI (solana config set --url ...)
   - deploy account
     + solana-keygen new --outfile path file/key.json
-    + solana config set --keypair path to file
+    + solana config set --keypair path to file /n
   => Tricks (cargo-build-bpf)
     + Windows: set path for Home = C:\Users\<user>
     + Run as admin
