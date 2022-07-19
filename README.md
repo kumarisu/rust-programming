@@ -50,3 +50,8 @@ Request airdrop (solana/web3.js)
     + Windows: set path for Home = C:\Users\<user>
     + Run as admin
   </p>
++ Check deployed SC
+  - Program deployed => programId (like: 4YFUf3U4pfyW1AvsxcjfBFkYrDtY21x4p49tezfDyhDa)
+  - create publicKey: new PublicKey(programId)
+  - get info: connection.getAccountInfo(publicKey)
+  
