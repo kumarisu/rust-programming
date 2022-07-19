@@ -55,3 +55,12 @@ Request airdrop (solana/web3.js)
   - create publicKey: new PublicKey(programId)
   - get info: connection.getAccountInfo(publicKey)
   
+## Storage for program
++ Solana program = stateless
++ How to store data: => account
+  - inputs:
+    + programId = new PublicKey(programAddress);
+    + payer = Keypair.fromSecretKey(new Uint8Array(JSON.parse(secret))); // current login
+    + greetedPubkey(payer.publicKey, seed, programId)
+    + lamports: connection.getMinimumBalanceForRentExemption(size)
+    + transaction: SystemProgram.createAccountWithSeed() => sendAndConfirmTransaction(connection, transaction, [payer])
